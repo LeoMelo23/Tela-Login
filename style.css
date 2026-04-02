@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: linear-gradient(to bottom, rgba(115, 2, 115, 0.847), rgba(0, 255, 255, 0.775));
+    height: 100vh;
+    width: 100vw;
+}
+#telas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 75vw;
+    max-width: 900px;
+    min-height: 420px;
+}
+
+#telaLogin{
+    width: 50%;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 1.2em;
+}
+
+#telaImagem{
+    background-image: url(pexels-mariano-di-luch-679379189-28935958.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
+}
+
+h1,p{
+    margin-bottom: 1.3rem;
+}
+
+
+
+#user,#password{
+    margin-top: 5px;
+  background-color: rgba(115, 2, 115, 0.847);
+    border-radius: 10px;
+    padding: 1px;
+    color: white;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(154, 253, 253);
+    width: 90%;
+    border: 2px solid purple;
+ 
+  
+}
+label{
+   padding: 5px;
+   margin-left: 8px;
+}
+
+#user{
+    font-size: 1.2em;
+}
+#password{
+    font-size: 1.1em;
+}
+
+.enter{
+    display: grid;
+}
+
+button{
+    text-align: center;
+    background-color: rgb(14, 196, 196);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.7em;
+    margin-top: 5px;
+    font-size: 1em;
+}
+#esqueci{
+    background-color: white;
+    color: rgb(14, 196, 196);
+}
+
+input:focus, input:valid{
+    background-color: white;
+}
+
+#entrar:hover{
+    background-color: rgb(28, 93, 93);
+   
+}
+
+#esqueci:hover{
+    background-color: rgb(207, 246, 246);
+   
+}
+
+@media (max-width: 768px){
+    body{
+        min-height: 100vh;
+      
+    }
+
+    #telas{
+        width: 92vw;
+        min-height: 0;
+        flex-direction: column-reverse;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #telaImagem{
+        width: 100%;
+        height: 220px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    #telaLogin{
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+}
+@media (min-width: 769px){
+    #telas{
+        width: 95vw;
+    }
+}

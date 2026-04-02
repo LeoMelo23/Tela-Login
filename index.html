@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <form action="submit">
+        <main>
+            <div id="telas">
+                <div id="telaLogin">
+                    <h1>Login</h1>
+                    <p>Seja bem-vindo(a) novamente.Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                    <div id="user">
+                        <label for="usuario"><i class="fa-solid fa-user" id="bonecouser"></i></label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Email ou usuário" required>
+                    </div>
+                    <div id="password">
+                        <label for="senha"><i class="fa-solid fa-key"></i></label>
+                        <input type="password" id="senha" name="senha" placeholder="Senha" required minlength="8">
+                    </div>
+                    <div class="enter">
+                        <button id="entrar">Entrar</button>
+                        <button id="esqueci">Esqueci a senha <i class="fa-solid fa-envelope"></i></button>
+                    </div>
+                </div>
+                  <div id="telaImagem"></div>
+            </div>
+        </main>
+    </form>
+    
+</body>
+</html>
