@@ -108,21 +108,25 @@ input:focus, input:valid{
 @media (max-width: 768px){
     body{
         min-height: 100vh;
+        width: 100vw;
+        background-color: purple;
+      
       
     }
 
     #telas{
-        width: 92vw;
+        width: 90vw;
         min-height: 0;
         flex-direction: column-reverse;
         top: 1rem;
         left: 50%;
         transform: translateX(-50%);
+        
     }
 
     #telaImagem{
         width: 100%;
-        height: 220px;
+        height: 190px;
         border-radius: 10px 10px 0 0;
     }
 
@@ -131,8 +135,9 @@ input:focus, input:valid{
         border-radius: 0 0 10px 10px;
     }
 }
-@media (min-width: 769px){
+@media (min-width: 769px) and (max-width: 1024px){
     #telas{
-        width: 95vw;
+        width: 100vw;
     }
+   
 }
