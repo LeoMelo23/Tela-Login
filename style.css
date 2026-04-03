@@ -41,6 +41,9 @@ h1,p{
     margin-bottom: 1.3rem;
 }
 
+p{
+    font-size: 1em;
+}
 
 
 #user,#password{
@@ -56,6 +59,7 @@ input{
     background-color: rgb(154, 253, 253);
     width: 100%;
     border: 2px solid purple;
+    font-size: 1em;
   
 }
 label{
